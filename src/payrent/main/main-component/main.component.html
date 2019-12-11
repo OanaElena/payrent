@@ -1,0 +1,12 @@
+<main-nav-component></main-nav-component>
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #drawer mode="side" opened role="navigation" class="sidenav-fixed">
+    <mat-nav-list>
+      <a routerLink=""><img class="logo-image" src="assets/images/atena.png"/></a>
+      <a mat-list-item routerLink="home">Acasa</a>
+      <a mat-list-item routerLink="auth">Autentificare</a>
+      <mat-divider class="space-divider"></mat-divider>
+    </mat-nav-list>
+  </mat-sidenav>
+  <router-outlet></router-outlet>
+</mat-sidenav-container>

@@ -1,0 +1,21 @@
+.example-container {
+  flex: 1 1 auto;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  top:100px;
+}
+
+.sidenav-fixed{
+  background: #D3D3D3;
+  width: 200px;
+  transform: none;
+  visibility: visible;
+  display: block;
+  position: fixed;
+  top:100px;
+}
+
+.space-divider{
+  height: 50px;
+}

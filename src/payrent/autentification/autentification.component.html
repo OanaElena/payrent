@@ -1,0 +1,12 @@
+<h1>Autentificare</h1>
+
+<form [formGroup]="form">
+  <mat-form-field>
+    <input type="email" placeholder="Adresa de email:"  matInput formControlName="email">
+    <mat-error *ngIf="this.form.get('email').invalid">{{getEmailErrorMessage()}}</mat-error>
+  </mat-form-field>
+  <mat-form-field>
+    <input type="password" placeholder="Parola:"  matInput formControlName="password">
+    <mat-error *ngIf="this.form.get('password').invalid">{{getPasswordErrorMessage()}}</mat-error>
+  </mat-form-field>
+</form>
